@@ -30,14 +30,7 @@ foreach ( $understrap_includes as $file ) {
 	require_once get_template_directory() . '/inc' . $file;
 }
 
-add_theme_support('custom-header', [
-	// 'default-image'         => get_stylesheet_directory_uri() . '/assets/img/default-header-image.jpeg',
-	'header-text'           => true,
-	'default-text-color'    => '000',
-	'width'                 => 2560,
-	'height'                => 1080,
-	'flex-width'            => true,
-	'flex-height'           => true,
-]);
+// Custom Header
+get_template_part('inc/custom-header');
 
-add_theme_support( 'header-text' );
+
