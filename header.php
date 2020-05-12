@@ -29,16 +29,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<div id="wrapper-navbar">
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
-
+		
 		<nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-primary" aria-labelledby="main-nav-label">
+			
+			
 
 			<h2 id="main-nav-label" class="sr-only">
 				<?php esc_html_e( 'Main Navigation', 'understrap' ); ?>
 			</h2>
+			
 
 		<?php if ( 'container' === $container ) : ?>
-			<div class="container">
+			<div class="container">		
 		<?php endif; ?>
+		
+		
 
 					<!-- Your site title as branding in the menu -->
 					<?php if ( ! has_custom_logo() ) { ?>
@@ -46,6 +51,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<?php if ( is_front_page() && is_home() ) : ?>
 
 							<h1 class="navbar-brand mb-0"><a rel="home" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" itemprop="url"><?php bloginfo( 'name' ); ?></a></h1>
+							
 
 						<?php else : ?>
 
@@ -86,3 +92,4 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</nav><!-- .site-navigation -->
 
 	</div><!-- #wrapper-navbar end -->
+	<? get_template_part('template-parts/header-image'); ?>
