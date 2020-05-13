@@ -1,14 +1,22 @@
 /*
 * Front - Page Hero Canvas
 */
-
+#main {
+    margin: auto;
+}
 .front-page-hero {
-    width: 95vw;
-    height: 100vh;
-    background-size: contain;
+    width: 100vw;
+    min-height: 75vh;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 
 #index-wrapper {
     padding-top: 0;
 }
+
+.jumbotron {
+    background-color: transparent!important; 
+    border-radius: 0rem!important;
+}
+
