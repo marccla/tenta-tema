@@ -38,10 +38,11 @@ if ( ! function_exists( 'understrap_custom_header_setup' ) ) {
 			apply_filters(
 				'understrap_custom_header_args',
 				array(
-					'default-image' => get_parent_theme_file_uri( 'assets/images/default-header.jpg' ),
-					'width'         => 2000,
-					'height'        => 500,
-					'flex-height'   => false,
+					'default-image'		  => get_parent_theme_file_uri( 'assets/images/default-header.jpg' ),
+					'width'       		  => 2000,
+					'height'      		  => 500,
+					'flex-height'  		  => false,
+					
 				)
 			)
 		);
@@ -51,7 +52,7 @@ if ( ! function_exists( 'understrap_custom_header_setup' ) ) {
 				'default-image' => array(
 					'url'           => '%s/assets/images/default-header.jpg',
 					'thumbnail_url' => '%s/assets/images/default-header.jpg',
-					'description'   => __( 'Default Header Image', 'understrap' ),
+					'description'   => __( 'Default Header Image', 'understrap' ),	
 				),
 			)
 		);
