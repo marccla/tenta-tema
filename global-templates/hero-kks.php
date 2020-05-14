@@ -13,7 +13,7 @@
     <div class="jumbotron front-page-hero" style="background-image: url('<?php echo $image['url']; ?>')">
         <h2><? the_field('hero_titel'); ?></h2>
         <p class="lead"><? the_field('hero_subtitle'); ?></p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        <a class="btn btn-primary btn-lg" href="#" role="button"><?php _e('Mer info'); ?></a>
     </div>
 </section>
 
