@@ -1,0 +1,22 @@
+/*
+* Main NavBar Styles
+*/
+
+#main-nav {
+    background-color: black!important;
+    font-family: 'Playfair Display SC', serif;
+        .navbar-brand {
+        @include media-breakpoint-up(md) {
+            margin-left: 10%;
+        }
+    }
+    #navbarNavDropdown {
+        font-family: 'Roboto', sans-serif;
+        @include media-breakpoint-up(md) {
+            margin-right: 10%;
+        }
+    }
+}
+
+
+

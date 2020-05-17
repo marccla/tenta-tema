@@ -1,0 +1,67 @@
+/*
+* Front - Page Latest Cats display
+*/
+
+.latest-cats {
+    @include media-breakpoint-up(lg) {
+        margin-top: 30px;
+    }
+    
+}
+// Title - Info text
+.cats-title-container {
+    background-color: black!important;
+    color: $cat-secondary;
+    font-family: 'Playfair Display SC', serif;
+    padding: 40px;
+
+    h2 {
+        color: $cat-secondary;
+        font-size: 3rem;
+        text-align: center;
+    }
+    // Paragraph - Info Text
+    p {
+        font-family: 'Roboto', sans-serif;
+        max-width: 70%;
+        margin: auto;
+    }
+    // Large Screen Styles
+    @include media-breakpoint-up(lg) {
+        h2 {
+           font-size: 3.5rem;
+        }
+     }
+    @include media-breakpoint-up(xl) {
+        h2 {
+           font-size: 4rem;
+        }
+     }
+}
+
+// New Cat - Container on Front Page
+.cat-container {
+    background-color: $cat-primary;
+    padding: 1rem;
+    margin: auto;
+
+}
+// Single Cat on Front Page
+.one-cat {
+    padding-top: 30px;
+    text-align: center;
+    margin: auto;
+    text-transform: lowercase;
+        a {
+            color: $cat-secondary;
+            font-size: 2rem;
+            border: 2px blac
+            }
+            p:hover {
+                background-color: $cat-secondary;
+                color: $cat-primary;
+            }
+                a:hover {
+                text-decoration: none;
+                }
+}

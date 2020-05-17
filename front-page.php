@@ -17,16 +17,20 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php if ( is_front_page() && is_home() ) : ?>
 	<?php get_template_part( 'global-templates/hero' ); ?>
 <?php endif; ?>
-
-<div class="wrapper" id="index-wrapper">
+<?php get_template_part('global-templates/hero-kks') ?>
+<div class="wrapper mt-md-5" id="index-wrapper">
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
-        <?php get_template_part('global-templates/hero-kks') ?>
+        
 			
 			
 
-			<main class="site-main" id="main">
+			<main class="site-main m-auto" id="main">
+			<?php get_template_part('loop-templates/content', 'latest-cats') ?>
+			<?php get_template_part('loop-templates/content', 'how-to') ?>
+
+
                 
 
 

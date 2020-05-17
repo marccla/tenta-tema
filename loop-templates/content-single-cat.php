@@ -1,4 +1,14 @@
 <?php
+/**
+ * KK's Malmö partial single cat page
+ *
+ *
+ * @package understrap
+ */
+
+// Exit if accessed directly.
+defined( 'ABSPATH' ) || exit;
+
 $image = get_field('cat_picture');
 ?>  
 <div class="container">

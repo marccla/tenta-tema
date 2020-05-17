@@ -51,7 +51,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 						 */
                         
-                        get_template_part( 'template-parts/archive-card-cat');
+                        get_template_part( 'loop-templates/content', 'card-cat');
                         
 					}
 				} else {
