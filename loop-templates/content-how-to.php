@@ -18,13 +18,14 @@ defined( 'ABSPATH' ) || exit;
 	<?php
     $adopt = new WP_Query([
         'post_type'         =>      'adoption',
+        'order'				=>      'ASC',
     ]); ?>
    
     
        
      <?php while ($adopt->have_posts()) : $adopt->the_post(); ?>
                 <div class="col-12 col-md-2 col-lg-2 one-adopt">
-                    <h1><?php the_title();; ?></h1>
+                    <h1><?php the_title(); ?></h1>
                     <p class="adopt-text"><?php the_field('how_to_adopt'); ?></p>
                 </div>	             
        <?php endwhile; ?>     
