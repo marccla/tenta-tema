@@ -27,8 +27,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 			
 
 			<main class="site-main m-auto" id="main">
-			<?php get_template_part('loop-templates/content', 'latest-cats') ?>
-			<?php get_template_part('loop-templates/content', 'how-to') ?>
+			<?php get_template_part('loop-templates/content', 'latest-cats'); ?>
+			<?php get_template_part('loop-templates/content', 'how-to'); ?>
+			<?php get_template_part('loop-templates/content', 'success'); ?>
 
 
                 

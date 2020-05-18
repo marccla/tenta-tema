@@ -7,6 +7,6 @@ $image = get_field('cat_picture');
   <div class="card-body">
     <h5 class="card-title"><?php the_field('cat_name'); ?></h5>
     <p class="card-text"><?php the_field('cat_gender'); ?></p>
-    <a href="http://localhost/wp-tema/tenta-tema/cat/<?php the_field('cat_name'); ?>" class="btn btn-primary"><?php _e('Mer info'); ?></a>
+    <a href="<?php the_perma_link(); ?>" class="btn btn-primary"><?php _e('More Info', 'kks'); ?></a>
   </div>
 </div>

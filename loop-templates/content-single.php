@@ -2,7 +2,7 @@
 /**
  * Single post partial template
  *
- * @package understrap
+ * @package kks
  */
 
 // Exit if accessed directly.
@@ -32,7 +32,7 @@ defined( 'ABSPATH' ) || exit;
 		<?php
 		wp_link_pages(
 			array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'understrap' ),
+				'before' => '<div class="page-links">' . __( 'Pages:', 'kks' ),
 				'after'  => '</div>',
 			)
 		);

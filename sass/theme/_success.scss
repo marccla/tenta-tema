@@ -1,8 +1,8 @@
 /*
-* Front - Page How to Adopt display
+* Front - Page Success Stories display
 */
 
-.how-to-adopt {
+.success {
 
     .container {
         padding-left: 0;
@@ -14,12 +14,11 @@
     
 }
 // Title - Info text
-.adopt-title-container {
+.success-title-container {
     background-color: black!important;
     color: $cat-secondary;
     font-family: 'Playfair Display SC', serif;
     padding: 60px;
-    
 
     h2 {
         color: $cat-secondary;
@@ -34,7 +33,7 @@
     }
     // Large Screen Styles
     @include media-breakpoint-up(lg) {
-        order: 2;
+        
         h2 {
            font-size: 3.5rem;
         }
@@ -46,24 +45,36 @@
      }
 }
 
-// New Cat - Container on Front Page
-.adopt-container {
+// Success - Container on Front Page
+.success-container {
     background-color: $cat-primary;
     margin: auto;
 
 }
-// Single Cat on Front Page
-.one-adopt {
-    padding-top: 30px;
-    text-align: center;
-    text-transform: lowercase;
+// Single Success on Front Page
+.one-success {
     
+    padding: 12%;
+    text-align: justify;
+    margin: auto;
+    img {
+        margin-top: 5%;
+    }
+    
+    h2 {
+        text-transform: uppercase;
+        font-family: 'Playfair Display SC', serif;
+    }
         a {
             color: $cat-secondary;
             font-size: 2rem;
+            border: 2px blac
             }
-
                 a:hover {
                 text-decoration: none;
                 }
+}
+
+.success-text {
+    margin-top: 20px;
 }

@@ -4,7 +4,7 @@
  *
  * Template for displaying a blank page.
  *
- * @package understrap
+ * @package kks
  */
 
 // Exit if accessed directly.
