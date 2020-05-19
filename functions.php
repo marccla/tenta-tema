@@ -22,7 +22,7 @@ $understrap_includes = array(
 	'/custom-header.php',					// Custom Header.
 	'/custom-post-types.php',				// Load Custom Post Types.	
 	'/custom-taxonomies.php',				// Load Custom Taxonomies.
-	'/acf-options.php',						// Options for ACF.	
+	'/acf-fieldgroups.php',												
 	'/acf.php',								// Load Custom Fields.
 	'/jetpack.php',                         // Load Jetpack compatibility file.
 	'/class-wp-bootstrap-navwalker.php',    // Load custom WordPress nav walker. Trying to get deeper navigation? Check out: https://github.com/understrap/understrap/issues/567.
@@ -36,5 +36,11 @@ foreach ( $understrap_includes as $file ) {
 
 }
 
-
+// Register ACF Options Page.
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}
+?>
 
