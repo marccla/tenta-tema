@@ -3,7 +3,7 @@
  * KKs Malmö
  * BLOG PAGE
  *
- * @package understrap
+ * @package kks
  */
 
 // Exit if accessed directly.

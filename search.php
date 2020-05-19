@@ -2,7 +2,7 @@
 /**
  * The template for displaying search results pages
  *
- * @package understrap
+ * @package kks
  */
 
 // Exit if accessed directly.
@@ -33,7 +33,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 								<?php
 								printf(
 									/* translators: %s: query term */
-									esc_html__( 'Search Results for: %s', 'understrap' ),
+									esc_html__( 'Search Results for: %s', 'kks' ),
 									'<span>' . get_search_query() . '</span>'
 								);
 								?>
