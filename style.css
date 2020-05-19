@@ -1,19 +1,18 @@
 /*
 Theme Name: kks
-Theme URI: marcl.se
-Author: Holger Koenemann
-Author URI: https://www.holgerkoenemann.de
-GitHub Theme URI: https://github.com/kks/kks
-Description: Combination of Automattic´s _s theme and Bootstrap 4. Made as a solid starting point for your next theme project and WordPress website. Use it as starter theme or as a parent theme. It is up to you. Including Font Awesome support, built-in widget slider and much more you need for basic websites. IMPORTANT: All developer dependencies are not bundled with this install file. Just download the .zip, extract it and run "npm install" and "gulp copy-assets" inside the extracted /kks folder.
-That downloads everything and moves it in place so that you can recompile your CSS and JS files;
-A developer version (with Gulp/node and Sass sources) is available on gitHub: https://github.com/kks/kks
-A child theme is available on Github, too: https://github.com/kks/kks-child;
-Version: 0.9.4
-License: kks WordPress Theme, Copyright 2013-2017 Holger Koenemann
-kks is distributed under the terms of the GNU GPL version 2
+Theme URI: kks.marcl.se
+Author: Marc Larsson
+Author URI: marcl.se
+GitHub Theme URI: https://github.com/marccla/tenta-tema
+Description: Cat shelter Theme, features included; Storing Cats with custom fields like age, description etc. Also customizable 
+Hero with CTA. Success Stories and a Blog.
+Version: 0.9
+License: kks WordPress Theme, Copyright 2020 Marc Larsson
+
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
+
 Text Domain: kks
-Tags: one-column, custom-menu, featured-images, theme-options, translation-ready
+Tags: cat shelter, theme-options, translation-ready.
 
 This theme, like WordPress, is licensed under the GPL.
 kks is based on Underscores https://underscores.me/, (C) 2012-2016 Automattic, Inc.

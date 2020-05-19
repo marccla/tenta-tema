@@ -14,7 +14,7 @@ $image = get_field('cat_picture');
 <div class="container">
     <div class="row">
         <div class="img-container col-12 col-md-6 col-lg-6">
-            <img class="cat-img" src="<?php echo esc_url($image['url']); ?>" alt="<?php _e('Picture of ', 'kks') . the_field('cat_name'); ?>">
+        <?php echo get_the_post_thumbnail(); ?>
         </div>
         <article class="col-12 col-md-6 col-lg-6">
             <h1 class="single-cat-name"><?php the_field('cat_name'); ?></h1>

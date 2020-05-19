@@ -24,16 +24,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 <?php endif; ?>
 
 <div class="wrapper" id="index-wrapper">
-
+	
 	<div class="<?php echo esc_attr( $container ); ?>" id="content" tabindex="-1">
 
 		<div class="row">
-
+		
 			<!-- Do the left sidebar check and opens the primary div -->
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
-
+		
 			<main class="site-main" id="main">
-
+				<div class="container mt-5">
+					<div class="row">
 				<?php
 				if ( have_posts() ) {
 					// Start the Loop.
@@ -51,6 +52,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 					get_template_part( 'loop-templates/content', 'none' );
 				}
 				?>
+			</div>
+			</div>
 
 			</main><!-- #main -->
 

@@ -12,5 +12,14 @@
 @import "theme/contact-form7";    // <-------- Contact Form 7 - Bootstrap 4 support
 
 
+// Styles For KKs Malmö Theme
 
+@import "theme/main";              // <-------- General Styles For KKs Malmö Theme.
+@import "theme/hero";              // <-------- Front-Page Hero Canvas
+@import "theme/latest-cats";       // <-------- Front-Page Latest Cats display
+@import "theme/fonts";             // <-------- Fonts import
+@import "theme/nav";               // <-------- Navbar Styles
+@import "theme/adopt";             // <-------- Front-page How To Adopt Styles
+@import "theme/success";           // <-------- Front-page Success Stories
+@import "theme/archive-cats";      // <-------- Archive for Cats Styles
 

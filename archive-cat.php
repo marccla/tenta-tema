@@ -4,7 +4,7 @@
  *
  * 
  *
- * @package understrap
+ * @package kks
  */
 
 // Exit if accessed directly.
@@ -25,15 +25,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php get_template_part( 'global-templates/left-sidebar-check' ); ?>
 
 			<main class="site-main" id="main">
-
+			
 				<?php
 				if ( have_posts() ) {
 					?>
-					<header class="page-header">
-						<?php
-						the_archive_title( '<h1 class="page-title">', '</h1>' );
-						the_archive_description( '<div class="taxonomy-description">', '</div>' );
-						?>
+					<header class="page-header text-center mb-3">
+						<h1><?php _e('All Cats', 'kks'); ?></h1>
                     </header><!-- .page-header -->
                     <div class="container">
                         <div class="row">

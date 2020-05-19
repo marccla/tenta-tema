@@ -1,56 +1,7 @@
-<?php
-/**
- * Post rendering content according to caller of get_template_part
- *
- * @package kks
- */
-
-// Exit if accessed directly.
-defined( 'ABSPATH' ) || exit;
-?>
-
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-
-	<header class="entry-header">
-
-		<?php
-		the_title(
-			sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
-			'</a></h2>'
-		);
-		?>
-
-		<?php if ( 'post' === get_post_type() ) : ?>
-
-			<div class="entry-meta">
-				<?php understrap_posted_on(); ?>
-			</div><!-- .entry-meta -->
-
-		<?php endif; ?>
-
-	</header><!-- .entry-header -->
-
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
-
-	<div class="entry-content">
-
-		<?php the_excerpt(); ?>
-
-		<?php
-		wp_link_pages(
-			array(
-				'before' => '<div class="page-links">' . __( 'Pages:', 'kks' ),
-				'after'  => '</div>',
-			)
-		);
-		?>
-
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-
-		<?php understrap_entry_footer(); ?>
-
-	</footer><!-- .entry-footer -->
-
-</article><!-- #post-## -->
+<div class="card col-6 col-md-4 col-lg-3 cat-card" style="width: 18rem;">
+<?php echo get_the_post_thumbnail( $post->ID, 'medium' ); ?>
+  <div class="card-body">
+    <h5 class="card-title"><?php the_title(); ?></h5>
+    <a href="<?php the_permalink(); ?>" class="btn btn-primary cat-btn"><?php _e('More Info', 'kks'); ?></a>
+  </div>
+</div>
