@@ -19,7 +19,11 @@ $understrap_includes = array(
 	'/extras.php',                          // Custom functions that act independently of the theme templates.
 	'/customizer.php',                      // Customizer additions.
 	'/custom-comments.php',                 // Custom Comments file.
-	'/custom-header.php',					// Custom Header
+	'/custom-header.php',					// Custom Header.
+	'/custom-post-types.php',				// Load Custom Post Types.	
+	'/custom-taxonomies.php',				// Load Custom Taxonomies.
+	'/acf-options.php',						// Options for ACF.	
+	'/acf.php',								// Load Custom Fields.
 	'/jetpack.php',                         // Load Jetpack compatibility file.
 	'/class-wp-bootstrap-navwalker.php',    // Load custom WordPress nav walker. Trying to get deeper navigation? Check out: https://github.com/understrap/understrap/issues/567.
 	'/woocommerce.php',                     // Load WooCommerce functions.

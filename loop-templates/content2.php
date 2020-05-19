@@ -14,7 +14,7 @@ defined( 'ABSPATH' ) || exit;
 
 		<div class="card col-12 col-md-4 col-lg-4">
 				<header class="entry-header">
-		<h1>CAAAAAAAAATS</h1>
+		
 					<?php
 					the_title(
 						sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ),
