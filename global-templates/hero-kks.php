@@ -1,6 +1,7 @@
 <?php
 /*
-* Hero for KK's - Front Page
+* Hero for KK's
+* FRONT PAGE
 */
 ?>
    <?php
@@ -15,15 +16,21 @@
     ?>
     
 <section id="front-page-hero">
+
     <div class="jumbotron front-page-hero" style="background-image: url('<?php echo $image['url']; ?>')">
+
         <div class="jumbo-text">
+
             <h2><? the_field('hero_titel'); ?></h2>
+
             <p style="font-size:<?php echo $heroTextSize; ?>rem;" class="lead"><? the_field('hero_subtitle'); ?></p>
-            <!-- Show CTA if filled in --->
+
+            <!-- Show CTA Button if filled in --->
            <?php if(!empty($cta)) : ?>
+
                <a class="btn jumbo-button" href="<?php echo $cta ?>" role="button"><?php _e('More info', 'kks'); ?></a>
-          <?php
-          endif; ?>
+
+           <?php endif; ?>
             
         </div>
     </div>

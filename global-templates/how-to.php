@@ -26,13 +26,19 @@ defined( 'ABSPATH' ) || exit;
     ]); ?>
    
     
-      <div class="col-12 col-md-6 col-lg-6">
+        <div class="col-12 col-md-6 col-lg-6">
+
      <?php while ($adopt->have_posts()) : $adopt->the_post(); ?>
-                <div class="col-12 col-md-12 col-lg-12 one-adopt">
-                    <h1><?php the_title(); ?></h1>
-                    <p class="adopt-text"><?php the_field('how_to_adopt'); ?></p>
-                </div>	             
-       <?php endwhile; ?>     
+
+            <div class="col-12 col-md-12 col-lg-12 one-adopt">
+
+                <h1><?php the_title(); ?></h1>
+
+                <p class="adopt-text"><?php the_field('how_to_adopt'); ?></p>
+
+        </div>	 
+
+    <?php endwhile; ?>     
         
 
 	<?php 
