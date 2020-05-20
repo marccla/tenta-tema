@@ -13,18 +13,14 @@ $image = get_field('cat_picture');
 ?>  
 
 <?php
-
 // Get Age from Date of Birth
-$birth = get_field('cat_age');
+$birth = get_field('cat_age'); 
 
 if(!empty($birth)) :
     $bday = new DateTime($birth); // Your date of birth
     $today = new Datetime(date('m.d.y'));
     $diff = $today->diff($bday);
 endif;
-    
-
-
 ?>
 
 
@@ -44,7 +40,7 @@ endif;
            
             <h1 class="single-cat-name"><?php the_field('cat_name'); ?></h1> 
                
-            <p class="single-cat-age"><strong><?php _e('Age: ', 'kks') ?></strong><?php echo $diff->y ?><?php _e(' Years', 'kks'); ?> <?php echo $diff->m ?><?php _e(' Months', 'kks'); ?></p>
+            <p class="single-cat-age"><strong><?php _e('Born: ', 'kks') ?></strong><?php the_field('cat_age'); ?> (<?php echo $diff->y ?><?php _e(' Years ', 'kks'); ?><?php echo $diff->m ?><?php _e(' Months', 'kks'); ?>)</p>
 
             <p class="single-cat-color"><strong><?php _e('Color: ', 'kks') ?></strong><?php the_field('cat_color'); ?></p>
 

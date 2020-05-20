@@ -22,7 +22,7 @@ $understrap_includes = array(
 	'/custom-header.php',					// Custom Header.
 	'/custom-post-types.php',				// Load Custom Post Types.	
 	'/custom-taxonomies.php',				// Load Custom Taxonomies.
-	'/acf-fieldgroups.php',												
+	'/acf-fieldgroups.php',					// Load ACF Custom Fields Groups.							
 	'/acf.php',								// Load Custom Fields.
 	'/jetpack.php',                         // Load Jetpack compatibility file.
 	'/class-wp-bootstrap-navwalker.php',    // Load custom WordPress nav walker. Trying to get deeper navigation? Check out: https://github.com/understrap/understrap/issues/567.

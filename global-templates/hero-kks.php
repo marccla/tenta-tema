@@ -17,7 +17,7 @@
     
 <section id="front-page-hero">
 
-    <div class="jumbotron front-page-hero" style="background-image: url('<?php echo $image['url']; ?>')">
+    <div class="jumbotron front-page-hero" style="background-image: url('<?php echo $imageURL; ?>')">
 
         <div class="jumbo-text">
 

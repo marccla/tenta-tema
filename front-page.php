@@ -32,7 +32,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 			<?php get_template_part('global-templates/how-to'); ?>
 
-			<?php get_template_part('global-templates/success'); ?>
+			<?php get_template_part('global-templates/success-carousel'); ?>
 
 
                 
