@@ -1,4 +1,4 @@
-<?php
+<?
 if( function_exists('acf_add_local_field_group') ):
 
 acf_add_local_field_group(array(
@@ -57,7 +57,7 @@ acf_add_local_field_group(array(
 				'id' => '',
 			),
 			'display_format' => 'd/m/Y g:i a',
-			'return_format' => 'd/m/Y',
+			'return_format' => 'm.d.20y',
 			'first_day' => 1,
 		),
 		array(
@@ -116,25 +116,6 @@ acf_add_local_field_group(array(
 			'display_format' => 'd/m/Y g:i a',
 			'return_format' => 'd/m/Y',
 			'first_day' => 1,
-		),
-		array(
-			'key' => 'field_5ebcf76a97feb',
-			'label' => 'Cat gender',
-			'name' => 'cat_gender',
-			'type' => 'text',
-			'instructions' => '',
-			'required' => 0,
-			'conditional_logic' => 0,
-			'wrapper' => array(
-				'width' => '',
-				'class' => '',
-				'id' => '',
-			),
-			'default_value' => '',
-			'placeholder' => '',
-			'prepend' => '',
-			'append' => '',
-			'maxlength' => '',
 		),
 	),
 	'location' => array(

@@ -43,11 +43,22 @@
   // submit button, inherit .btn and .btn-outline-primary classes.
   input[type=submit] {
     @extend .btn;
-    @extend .btn-outline-primary;
+    // @extend .btn-outline-primary;
+    border-color: $cat-secondary;
+    color: $cat-secondary;
+  }
+  .wpcf7-submit:hover {
+    background-color: $cat-primary!important;
+    border-color: $cat-secondary!important;
   }
 
   .wpcf7-form {
-
+    .wpcf7-text {
+      background-color: $cat-secondary;
+    }
+    .wpcf7-textarea {
+      background-color: $cat-secondary;
+    }
     // set paragraphs to behave like divs with class .form-group
     p {
       @extend .form-group;
@@ -56,18 +67,22 @@
     // let labels be 100%
     label {
       width: 100%;
+      color: $cat-secondary;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 800;
     }
   }
 
   // not valid tip for each control
   .wpcf7-not-valid-tip {
-    color: theme-color("danger");
+    color: $cat-primary;
   }
 
   // validation errors ourput bottom of form
   .wpcf7-validation-errors {
     @extend .form-control;
-    color: theme-color("danger");
+    color: $cat-secondary;
+    background-color: black;
     border: 1px solid $gray-200;
   }
 }

@@ -15,9 +15,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <?php get_template_part( 'sidebar-templates/sidebar', 'footerfull' ); ?>
 
-<div class="wrapper" id="wrapper-footer">
+<div class="wrapper theme-footer" id="wrapper-footer">
 
-	<div class="<?php echo esc_attr( $container ); ?>">
+	<div class="<?php echo esc_attr( $container ); ?> container">
 
 		<div class="row">
 
@@ -25,10 +25,23 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<footer class="site-footer" id="colophon">
 
-					<div class="site-info">
+					<div class="site-info text-center row">
 
-						<?php understrap_site_info(); ?>
+						<div class="col-12 col-md-6 col-lg-6 theme-info">
 
+						<span><small>copyright 2020 marc larsson </small></span>
+
+						</div>
+
+					<?php // Check if Front Page 
+						if(is_front_page())	: ?>
+						<div class="col-10 col-md-6 col-lg-6 page-content m-auto">
+
+							<?php the_content(); ?>
+					<?php	
+						endif;	 ?>
+						</div>	
+						
 					</div><!-- .site-info -->
 
 				</footer><!-- #colophon -->
