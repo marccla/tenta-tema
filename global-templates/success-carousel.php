@@ -17,6 +17,7 @@ defined( 'ABSPATH' ) || exit;
 $carouselItems =  get_field('number_of_carousel_items', 'option');
 $carouselBgColor = get_field('carousel_bg_color', 'option');
 $carouselTextColor = get_field('carousel_text_color', 'option');
+$carouselSpeed = get_field('carousel_speed', 'option');
 
 // Get the three latest success
 $success = new WP_Query([
@@ -37,7 +38,7 @@ if ($success->have_posts() ) :
             <div class="wrapper" id="wrapper-slider">
                 <div class="container ">
                     <h1 class="text-center" style="color:<?php echo $carouselTextColor ?>;"><?php _e('Success Stories', 'kks'); ?></h1>
-                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="<?php echo $carouselSpeed; ?>">
                             <div class="carousel-inner">
                             <?php while ($success->have_posts()) : $success->the_post(); ?>
                                 <?php

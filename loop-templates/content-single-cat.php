@@ -26,7 +26,7 @@ endif;
 
 
 
-<div class="container">
+<div class="container" data-aos="zoom-in">
 
     <div class="row">
 

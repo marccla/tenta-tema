@@ -22,7 +22,7 @@ if(!empty($birth)) :
 endif;
 ?>
 
-<div class="card col-6 col-md-4 col-lg-3 cat-card" style="width: 18rem;">
+<div class="card col-6 col-md-4 col-lg-3 cat-card" style="width: 18rem;" data-aos="fade-up">
 
 <?php echo get_the_post_thumbnail(); ?>
 
