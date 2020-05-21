@@ -15,23 +15,27 @@ defined( 'ABSPATH' ) || exit;
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
+		<div class="entry-meta mb-5">
 
-			<?php understrap_posted_on(); ?>
+			
 
 		</div><!-- .entry-meta -->
 
-	</header><!-- .entry-header -->
+	</header><!-- .entry-header -->	
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'medium' ); ?>
+	<div class="single-post-image-container mb-5">
 
-	<div class="entry-content">
+		<?php echo get_the_post_thumbnail( $post->ID, 'medium' ); ?>
+
+	</div>
+
+	<div class="entry-content mb-5">
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
 				<?php the_content(); ?>
 
-				<?php
+					<?php
 				wp_link_pages(
 					array(
 						'before' => '<div class="page-links">' . __( 'Pages:', 'kks' ),

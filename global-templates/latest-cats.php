@@ -29,7 +29,7 @@ defined( 'ABSPATH' ) || exit;
 
 	?>
 <?php if ($my_posts->have_posts()) : ?>
-	<section class="latest-cats">
+	<section class="latest-cats" data-aos="fade-up">
 		<div class="container">
 				<div class="row">
 

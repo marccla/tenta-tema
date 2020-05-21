@@ -22,12 +22,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="row">
 
 			<div class="col-md-12">
-
+			<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+			<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 				<footer class="site-footer" id="colophon">
 
 					<div class="site-info text-center row">
 
-						<div class="col-12 col-md-6 col-lg-6 theme-info">
+						<div class="col-12 col-md-6 col-lg-6 theme-info" data-aos="fade-right">
 
 						<span><small>copyright 2020 marc larsson </small></span>
 
@@ -35,7 +36,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<?php // Check if Front Page 
 						if(is_front_page())	: ?>
-						<div class="col-10 col-md-6 col-lg-6 page-content m-auto">
+						<div class="col-10 col-md-6 col-lg-6 page-content m-auto" data-aos="fade-left">
 
 							<?php the_content(); ?>
 					<?php	

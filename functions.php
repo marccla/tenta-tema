@@ -30,6 +30,8 @@ $understrap_includes = array(
 	'/editor.php',                          // Load Editor functions.
 	'/deprecated.php',                      // Load deprecated functions.
 );
+// Custom JS
+wp_enqueue_script( 'script', get_template_directory_uri() . '/js/animations.js', array ( 'jquery' ), 1.1, true);
 
 foreach ( $understrap_includes as $file ) {
 	require_once get_template_directory() . '/inc' . $file;

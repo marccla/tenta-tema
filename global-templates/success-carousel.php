@@ -31,7 +31,7 @@ $count = 0;
 if ($success->have_posts() ) :
     // Great success!
 ?>
-<section class="success">
+<section class="success" data-aos="fade-up">
     <div class="container">
         <div class="m-auto success-container" style="background-color:<?php echo $carouselBgColor ?>;">
             <div class="wrapper" id="wrapper-slider">
