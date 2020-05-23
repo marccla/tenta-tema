@@ -3,22 +3,37 @@
 */
 
 #main-nav {
-    background-color: black!important;
+    background-color: transparent!important;
     font-family: 'Playfair Display SC', serif;
+    z-index: 999;
         .navbar-brand {
         @include media-breakpoint-up(md) {
             margin-left: 10%;
+            color: black;
         }
     }
     #navbarNavDropdown {
         font-family: 'Roboto', sans-serif;
+        a {
+            color: black;
+        }
         @include media-breakpoint-up(md) {
-            margin-right: 10%;
+            margin-right: 15%;
         }
     }
 }
 
-
+.style-nav-container {
+    min-width: 500px;
+    height: 100vh;
+    bottom: 20px;
+    left: 90vh;
+    overflow: hidden;
+    background-color: $cat-accent;
+    z-index: -1!important;
+    position: fixed;
+    
+}
 
 
 

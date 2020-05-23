@@ -22,9 +22,9 @@
         <div class="jumbo-text">
 
             <h2 data-aos="fade-right"><? the_field('hero_titel'); ?></h2>
-
-            <p data-aos="fade-left" style="font-size:<?php echo $heroTextSize; ?>rem;" class="lead"><? the_field('hero_subtitle'); ?></p>
-
+            <div class="hero-info-text">
+                <p data-aos="fade-left" style="font-size:<?php echo $heroTextSize; ?>rem;" class="lead"><? the_field('hero_subtitle'); ?></p>
+            </div>
             <!-- Show CTA Button if filled in --->
            <?php if(!empty($cta)) : ?>
 

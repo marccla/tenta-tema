@@ -30,7 +30,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link sr-only sr-only-focusable" href="#content"><?php esc_html_e( 'Skip to content', 'kks' ); ?></a>
 		
-		<nav id="main-nav" class="navbar navbar-expand-md navbar-dark bg-primary" aria-labelledby="main-nav-label">
+		<nav id="main-nav" class="navbar navbar-expand-md" aria-labelledby="main-nav-label">
 			
 			
 
@@ -68,8 +68,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'kks' ); ?>">
 					<span class="navbar-toggler-icon"></span>
-				</button>
-
+				</button>			
+					
 				<!-- The WordPress Menu goes here -->
 				<?php
 				wp_nav_menu(
@@ -90,6 +90,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<?php endif; ?>
 
 		</nav><!-- .site-navigation -->
-
+		
 	</div><!-- #wrapper-navbar end -->
+	<div class="style-nav-container"></div>	
 	<? get_template_part('template-parts/header-image'); ?>

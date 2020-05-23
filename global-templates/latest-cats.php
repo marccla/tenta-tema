@@ -29,22 +29,22 @@ defined( 'ABSPATH' ) || exit;
 
 	?>
 <?php if ($my_posts->have_posts()) : ?>
-	<section class="latest-cats" data-aos="fade-up">
+	<section class="latest-cats" data-aos="fade-in">
 		<div class="container">
 				<div class="row">
 
-		<div style="background-color:<?php echo $bgTextColor; ?>;color:<?php echo $textColor; ?>;" class="col-12 col-md-12 col-lg-6 cats-title-container">		
-			<h2 style="color:<?php echo $textColor; ?>;font-size:<?php echo $titleSize; ?>rem;" class="cats-title-text"><?php _e('Our latest rescued Cats', 'kks'); ?></h2>
-			<p style="font-size:<?php echo $textSize; ?>rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere id perferendis, fuga culpa eum impedit sint necessitatibus consequuntur, libero veritatis tenetur cumque corrupti mollitia delectus consequatur ea esse ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, voluptatum.</p>
-		</div>
+				<div style="background-color:<?php echo $bgTextColor; ?>;color:<?php echo $textColor; ?>;" class="col-12 col-md-6 col-lg-6 cats-title-container" data-aos="fade-right">		
+					<h2 style="color:<?php echo $textColor; ?>;font-size:<?php echo $titleSize; ?>rem;" class="cats-title-text"><?php _e('Our latest rescued Cats', 'kks'); ?></h2>
+					<p style="font-size:<?php echo $textSize; ?>rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque facere id perferendis, fuga culpa eum impedit sint necessitatibus consequuntur, libero veritatis tenetur cumque corrupti mollitia delectus consequatur ea esse ad? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, voluptatum.</p>
+				</div>
 
-		<div style="background-color:<?php echo $bgColor; ?>;" class="col-12 col-md-12 col-lg-6 row cat-container">	
-			<!-- Loop Latest Cats -->
-			<?php while ($my_posts->have_posts()) : $my_posts->the_post(); ?>			
-						<?php get_template_part('loop-templates/content-latest_cats'); ?>		
-			<?php endwhile; ?>
-			 
-			<?php wp_reset_postdata(); ?>
+				<div style="background-color:<?php echo $bgColor; ?>;" class="col-12 col-md-6 col-lg-6 row cat-container" data-aos="fade-left">	
+					<!-- Loop Latest Cats -->
+					<?php while ($my_posts->have_posts()) : $my_posts->the_post(); ?>			
+								<?php get_template_part('loop-templates/content-latest_cats'); ?>		
+					<?php endwhile; ?>
+					
+					<?php wp_reset_postdata(); ?>
 				</div>
 			</div>
 		</div>

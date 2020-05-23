@@ -2,7 +2,7 @@
 * Front - Page Hero Canvas
 */
 .jumbotron {
-    border-top: 1px solid $cat-secondary;
+    
     border-radius: 0;
 }
 
@@ -13,6 +13,14 @@
     background-repeat: no-repeat;
     @include media-breakpoint-up(md) {
         min-height: 85vh;
+        max-width: 100vw;
+        background-size: 50% 50%;
+        background-attachment: fixed;
+        background-position: right;
+        background-repeat: no-repeat;
+        margin-right: 15%;
+        margin-left: 15%;
+        background-color: transparent;
     }
     
 }
@@ -32,6 +40,8 @@
 
             @include media-breakpoint-up(md) {
                 font-size: 6rem;
+                line-height: 1em;
+                margin-top: 0.5em;
             }
             @include media-breakpoint-up(lg) {
                 font-size: 9rem;
@@ -46,22 +56,23 @@
             max-width: 70%;
             font-size: 1rem;
             font-family: 'Roboto', sans-serif;
-            color: $cat-secondary;
-            text-shadow:
-            -1px -1px 0 #000,  
-            1px -1px 0 #000,
-            -1px 1px 0 #000,
-            1px 1px 0 #000;
+            color: $cat-primary;
+
             @include media-breakpoint-up(md)  {
                 max-width: 50%;
-                margin-left: 3%;
+                margin-left: 3%;  
+                background-color: $cat-primary!important;
+                color: $cat-secondary;
+                padding: 15px;
+                
+                
             }
             @include media-breakpoint-up(lg) {
-                max-width: 30%;
+                max-width: 50%;
+                right: 20%;
             }
         }
 }
-
 
 
 
