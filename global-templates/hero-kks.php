@@ -28,7 +28,7 @@
             <!-- Show CTA Button if filled in --->
            <?php if(!empty($cta)) : ?>
 
-               <a data-aos="fade-right" class="btn jumbo-button" href="<?php echo $cta ?>" role="button"><?php _e('More info', 'kks'); ?></a>
+               <a data-aos="fade-right" class="jumbo-button" href="<?php echo $cta ?>" role="button"><?php _e('More info', 'kks'); ?></a>
 
            <?php endif; ?>
             
