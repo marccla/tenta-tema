@@ -22,7 +22,7 @@ if(!empty($birth)) :
 endif;
 ?>
 
-<div class="card col-6 col-md-4 col-lg-3 cat-card" style="width: 18rem;" data-aos="fade-up">
+<div class="card col-12 col-md-6 col-lg-3 cat-card" style="width: 18rem;" data-aos="fade-up">
 
 <?php echo get_the_post_thumbnail(); ?>
 
@@ -42,7 +42,7 @@ endif;
      ?>
     
 
-    <a href="<?php the_permalink(); ?>" class="btn btn-primary cat-btn"><?php _e('More Info', 'kks'); ?></a>
+    <a href="<?php the_permalink(); ?>" class="jumbo-button"><?php _e('More Info', 'kks'); ?></a>
 
   </div> <!-- .card-body -->
 </div> <!-- .cat-card -->

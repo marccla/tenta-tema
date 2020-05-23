@@ -1,6 +1,7 @@
 <?php
 /**
- * Post rendering content according to caller of get_template_part
+ * Render Content for Blogg
+ * BLOG
  *
  * @package kks
  */
@@ -9,7 +10,7 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-<div class="card col-6 col-md-4 col-lg-3 cat-card" style="width: 18rem;">
+<div class="card col-12 col-md-6 col-lg-3 cat-card" style="width: 18rem;">
 
   <?php echo get_the_post_thumbnail( $post->ID, 'medium' ); ?>
 
@@ -17,7 +18,7 @@ defined( 'ABSPATH' ) || exit;
 
     <h5 class="card-title"><?php the_title(); ?></h5>
 
-    <a href="<?php the_permalink(); ?>" class="btn btn-primary cat-btn"><?php _e('More Info', 'kks'); ?></a>
+    <a href="<?php the_permalink(); ?>" class="jumbo-button"><?php _e('More Info', 'kks'); ?></a>
 
   </div>
 </div>

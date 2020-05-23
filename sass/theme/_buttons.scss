@@ -1,0 +1,38 @@
+.jumbo-button {
+    text-transform: capitalize;
+    margin-left: 5%;
+    opacity: 0.7;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    display: inline-block;
+    border: 0;
+    font-weight: 900;
+    background: transparent;
+    padding: 0.5em;
+    position: relative;
+    
+
+        
+}
+
+.jumbo-button::after {
+    content: '';
+    background-color: $cat-accent;
+    position: absolute;
+    width: 70%;
+    height: 0.7em;
+    left: 0;
+    top: 45%;
+    bottom: -20px;
+    z-index: -1;
+    transition: transform 250ms cubic-bezier(0.9, 0, 0.46, 1.71);
+    transform-origin: bottom left;
+
+    
+
+}
+.jumbo-button:hover::after,
+.jumbo-button:focus::after {
+    transform: scale(1.4, 1.6);
+}

@@ -22,8 +22,8 @@ $linkPrimaryColor = get_field('link_primary_color', 'option');
 
         </div>
 
-    <p style="color: <?php echo $linkPrimaryColor; ?>;" class="latest-cat-title"><?php the_field('cat_name'); ?></p>
+    <p style="color: <?php echo $linkPrimaryColor; ?>;" class="jumbo-button"><?php the_field('cat_name'); ?></p>
 
     </a>
 
-</div> <!-- .one-cat -->
+</div> <!-- .one-cat --->

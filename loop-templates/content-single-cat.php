@@ -43,9 +43,10 @@ endif;
             <p class="single-cat-age"><strong><?php _e('Born: ', 'kks') ?></strong><?php the_field('cat_age'); ?> (<?php echo $diff->y ?><?php _e(' Years ', 'kks'); ?><?php echo $diff->m ?><?php _e(' Months', 'kks'); ?>)</p>
 
             <p class="single-cat-color"><strong><?php _e('Color: ', 'kks') ?></strong><?php the_field('cat_color'); ?></p>
-
-            <p class="single-cat-desc"><strong><?php _e('Description: ', 'kks') ?></strong><?php the_field('cat_description'); ?></p>
-
+            <div class="desc-container">
+                <p><strong><?php _e('Description ', 'kks') ?></strong></p>
+                <p class="single-cat-desc"><?php the_field('cat_description'); ?></p>
+            </div>
             <p class="single-cat-weight"><strong><?php _e('Weight: ', 'kks') ?></strong><?php the_field('cat_weight'); ?> kg</p>
             
             <p class="single-cat-adopt"><?php the_field('cat_adopted'); ?></p>

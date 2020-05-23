@@ -28,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info text-center row">
 
-						<div class="col-12 col-md-6 col-lg-6 theme-info" data-aos="fade-right">
+						<div class="col-12 col-md-6 col-lg-6 theme-info" data-aos="fade-in">
 
 						<span><small>copyright 2020 marc larsson </small></span>
 
@@ -36,7 +36,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<?php // Check if Front Page 
 						if(is_front_page())	: ?>
-						<div class="col-10 col-md-6 col-lg-6 page-content m-auto" data-aos="fade-left">
+						<div class="col-12 col-md-6 col-lg-6 page-content m-auto">
 
 							<?php the_content(); ?>
 					<?php	
