@@ -75,7 +75,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
-						'container_class' => 'collapse navbar-collapse',
+						'container_class' => 'collapse navbar-collapse kks-navbar',
 						'container_id'    => 'navbarNavDropdown',
 						'menu_class'      => 'navbar-nav ml-auto',
 						'fallback_cb'     => '',
@@ -92,5 +92,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</nav><!-- .site-navigation -->
 		
 	</div><!-- #wrapper-navbar end -->
-	<div class="style-nav-container"></div>	
-	<? get_template_part('template-parts/header-image'); ?>
+	<div class="style-nav-container" data-aos="fade-in"></div>	
+
+	<?php 
+	// Feature Header Image
+	get_template_part('global-templates/header-image'); ?>
+	
