@@ -92,7 +92,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</nav><!-- .site-navigation -->
 		
 	</div><!-- #wrapper-navbar end -->
-	<div class="style-nav-container" data-aos="fade-in"></div>	
+	<div class="style-nav-container" ></div>	
 
 	<?php 
 	// Feature Header Image

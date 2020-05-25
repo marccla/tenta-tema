@@ -14,7 +14,6 @@
     color: $cat-secondary;
     font-family: 'Playfair Display SC', serif;
     padding: 40px;
-    
 
     h2 {
         color: $cat-secondary;
@@ -29,9 +28,7 @@
     }
     // Medium +
     @include media-breakpoint-up(md) {
-        left: 135px;
-        max-height: 400px;
-
+        left: 100px;
     }
     // Large Screen Styles
     @include media-breakpoint-up(lg) {
@@ -89,8 +86,6 @@
     @include media-breakpoint-up(lg) {
         max-width: 200px;
         margin: auto;
-        
-    
         z-index: 999;
 
     }

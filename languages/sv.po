@@ -25,7 +25,7 @@ msgstr ""
 
 #: 404.php:30 node_modules/undescores-for-npm/404.php:17
 msgid "Oops! That page can&rsquo;t be found."
-msgstr "Oj! Denna sidan kan inte hittas!"
+msgstr ""
 
 #: 404.php:36 node_modules/undescores-for-npm/404.php:21
 msgid ""
@@ -100,7 +100,7 @@ msgstr ""
 
 #: global-templates/hero-kks.php:31
 msgid "More info"
-msgstr "Mer info"
+msgstr ""
 
 #: global-templates/how-to.php:18
 msgid "How to Adopt"
@@ -113,7 +113,7 @@ msgstr "Våra Senast inkomna Katter"
 #: global-templates/success-carousel.php:40 global-templates/success2.php:29
 #: inc/custom-post-types.php:138 inc/custom-post-types.php:173
 msgid "Success Stories"
-msgstr "Lyckliga Historier"
+msgstr ""
 
 #: header.php:31 node_modules/undescores-for-npm/header.php:24
 msgid "Skip to content"
@@ -129,7 +129,7 @@ msgstr ""
 
 #: home.php:27
 msgid "News"
-msgstr "Nyheter"
+msgstr ""
 
 #: inc/acf/acf.php:68
 msgid "Advanced Custom Fields"
@@ -146,7 +146,7 @@ msgstr ""
 #: inc/acf/acf.php:344 inc/acf/acf.php:376 inc/acf/includes/admin/admin.php:53
 #: inc/acf/pro/fields/class-acf-field-flexible-content.php:558
 msgid "Add New"
-msgstr "Lägg till ny"
+msgstr ""
 
 #: inc/acf/acf.php:345
 msgid "Add New Field Group"
@@ -623,7 +623,7 @@ msgstr ""
 #: inc/acf/includes/admin/views/html-admin-page-upgrade-network.php:49
 #: inc/acf/pro/fields/class-acf-field-gallery.php:380
 msgid "Description"
-msgstr "Beskrivning"
+msgstr ""
 
 #: inc/acf/includes/admin/admin-field-groups.php:529
 #: woocommerce/myaccount/my-orders.php:18
@@ -3851,15 +3851,15 @@ msgstr ""
 #: inc/custom-taxonomies.php:55 inc/custom-taxonomies.php:57
 #: inc/custom-taxonomies.php:78
 msgid "Genders"
-msgstr "Kön"
+msgstr ""
 
 #: inc/custom-taxonomies.php:56
 msgid "Gender"
-msgstr "Kön"
+msgstr ""
 
 #: inc/custom-taxonomies.php:58
 msgid "All Genders"
-msgstr "All Kön"
+msgstr ""
 
 #: inc/custom-taxonomies.php:59
 msgid "Edit Gender"
@@ -4133,16 +4133,16 @@ msgstr ""
 #: loop-templates/content-card-cat.php:32
 #: loop-templates/content-single-cat.php:43
 msgid " Years "
-msgstr " År "
+msgstr ""
 
 #: loop-templates/content-card-cat.php:32
 #: loop-templates/content-single-cat.php:43
 msgid " Months"
-msgstr " Månader "
+msgstr ""
 
 #: loop-templates/content-card-cat.php:45 loop-templates/content.php:21
 msgid "More Info"
-msgstr "Mer info"
+msgstr ""
 
 #: loop-templates/content-none.php:18
 #: node_modules/undescores-for-npm/template-parts/content-none.php:14
@@ -4178,27 +4178,27 @@ msgstr ""
 
 #: loop-templates/content-single-cat.php:43
 msgid "Born: "
-msgstr "Född "
+msgstr ""
 
 #: loop-templates/content-single-cat.php:45
 msgid "Color: "
-msgstr "Färg "
+msgstr ""
 
 #: loop-templates/content-single-cat.php:47
 msgid "Description "
-msgstr "beskrivning"
+msgstr ""
 
 #: loop-templates/content-single-cat.php:50
 msgid "Weight: "
-msgstr "Vikt "
+msgstr ""
 
 #: loop-templates/content-single-cat.php:56
 msgid "Gender: "
-msgstr "Kön"
+msgstr ""
 
 #: loop-templates/content-single-cat.php:70
 msgid "Location: "
-msgstr "Stad"
+msgstr ""
 
 #: node_modules/gulp/node_modules/yargs-parser/index.js:301
 #: node_modules/sass-graph/node_modules/yargs-parser/index.js:301

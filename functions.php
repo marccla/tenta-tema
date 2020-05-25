@@ -22,8 +22,10 @@ $understrap_includes = array(
 	'/custom-header.php',					// Custom Header.
 	'/custom-post-types.php',				// Load Custom Post Types.	
 	'/custom-taxonomies.php',				// Load Custom Taxonomies.
-	'/acf-fieldgroups.php',					// Load ACF Custom Fields Groups.							
+		
+
 	'/acf.php',								// Load Custom Fields.
+	'/acf-fieldgroups.php',					// Load ACF Custom Fields Groups.
 	'/jetpack.php',                         // Load Jetpack compatibility file.
 	'/class-wp-bootstrap-navwalker.php',    // Load custom WordPress nav walker. Trying to get deeper navigation? Check out: https://github.com/understrap/understrap/issues/567.
 	'/woocommerce.php',                     // Load WooCommerce functions.
@@ -45,4 +47,6 @@ if( function_exists('acf_add_options_page') ) {
 	
 }
 ?>
+
+
 

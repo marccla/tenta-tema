@@ -10,7 +10,7 @@
 defined( 'ABSPATH' ) || exit;
 ?>
 
-	<section class="how-to-adopt" data-aos="fade-right">
+	<section class="how-to-adopt" >
 	    <div class="container">
 			<div class="row mt-md-5 adopt-container">
                     <!-- Title Container-->

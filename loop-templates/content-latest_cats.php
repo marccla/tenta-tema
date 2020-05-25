@@ -10,9 +10,10 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 $linkPrimaryColor = get_field('link_primary_color', 'option');
+$bgColor = get_field('background_latest_cats', 'option');
 ?>
 
-<div class="col-12 col-md-5 col-lg-5 one-cat">
+<div style="background-color:<?php echo $bgColor; ?>;" class="col-12 col-md-5 col-lg-5 one-cat" data-aos="fade-up">
     
     <a  href="<?php  the_permalink(); ?>">
 
@@ -22,7 +23,7 @@ $linkPrimaryColor = get_field('link_primary_color', 'option');
 
         </div>
 
-    <p style="color: <?php echo $linkPrimaryColor; ?>;" class="jumbo-button"><?php the_field('cat_name'); ?></p>
+    <p style="color: <?php echo $linkPrimaryColor?>;" class="jumbo-button"><?php the_field('cat_name'); ?></p>
 
     </a>
 

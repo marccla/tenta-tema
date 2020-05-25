@@ -32,11 +32,11 @@ $count = 0;
 if ($success->have_posts() ) :
     // Great success!
 ?>
-<section class="success" data-aos="fade-up">
+<section class="success">
     <div class="container">
         <div class="m-auto success-container" style="background-color:<?php echo $carouselBgColor ?>;">
             <div class="wrapper" id="wrapper-slider">
-                <div class="container ">
+                <div class="container" data-aos="fade-up">
                     <h1 class="text-center" style="color:<?php echo $carouselTextColor ?>;"><?php _e('Success Stories', 'kks'); ?></h1>
                         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-interval="<?php echo $carouselSpeed; ?>">
                             <div class="carousel-inner">
