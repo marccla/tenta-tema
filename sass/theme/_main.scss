@@ -8,9 +8,7 @@ body {
 h1 {
     font-family: 'Playfair Display SC', serif!important;
 }
-.site {
-  #
-}
+
 .page-content {
     order: 1;
     @include media-breakpoint-up(md) {
@@ -29,4 +27,33 @@ h1 {
 a:hover {
     text-decoration: none;
     color: $cat-secondary;
+}
+
+
+// Stretch everything on the front page
+
+#front-page-hero {
+    @include media-breakpoint-up(md) {
+        margin-bottom: 40vh;
+    }
+     
+}
+.latest-cats {
+    @include media-breakpoint-up(md) {
+        margin-bottom: 40vh;
+    }
+     
+}
+.how-to-adopt {
+    @include media-breakpoint-up(md) {
+        margin-bottom: 40vh;
+    }
+     
+}
+
+.success {
+    @include media-breakpoint-up(md) {
+        margin-bottom: 40vh;
+    }
+     
 }

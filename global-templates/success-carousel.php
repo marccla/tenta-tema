@@ -34,7 +34,7 @@ if ($success->have_posts() ) :
 ?>
 <section class="success">
     <div class="container">
-        <div class="m-auto success-container" style="background-color:<?php echo $carouselBgColor ?>;">
+        <div class="m-auto success-container" style="background-color:<?php echo $carouselBgColor ?>;" data-aos="fade-up">
             <div class="wrapper" id="wrapper-slider">
                 <div class="container" data-aos="fade-up">
                     <h1 class="text-center" style="color:<?php echo $carouselTextColor ?>;"><?php _e('Success Stories', 'kks'); ?></h1>
@@ -53,7 +53,7 @@ if ($success->have_posts() ) :
                                                 <?php the_field('success_story'); ?>
                                             </div>
                                         </div>
-                                    <img class="d-block " src="<?php echo esc_url($post_thumbnail); ?>" alt="<?php the_title(); ?>">
+                                    <img class="d-block" src="<?php echo esc_url($post_thumbnail); ?>" alt="<?php the_title(); ?>">
                                 </div>
 
                             <?php 

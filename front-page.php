@@ -29,14 +29,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<main class="site-main m-auto" id="main">
 				
 			<?php 
+				// Latest Cats
 			get_template_part('global-templates/latest-cats'); 
 			?>
 
-			<?php 
-			// get_template_part('global-templates/how-to'); 
+			<?php
+				//  How to adopt
+			get_template_part('global-templates/how-to'); 
 			?>
 
-			<?php get_template_part('global-templates/success-carousel'); ?>
+			<?php
+				// Success Carouse
+			 get_template_part('global-templates/success-carousel'); 
+			 ?>
 
 
                 
